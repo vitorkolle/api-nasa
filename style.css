@@ -86,6 +86,10 @@ p{
   text-align: center;
   font-size: 26px;
   margin-top: 5px;
+  text-decoration: none;
+}
+.pags-link{
+    text-decoration: none;
 }
 /****************************************************************************/
 .container-refs{
