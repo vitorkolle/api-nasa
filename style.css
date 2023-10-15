@@ -87,3 +87,33 @@ p{
   font-size: 26px;
   margin-top: 5px;
 }
+/****************************************************************************/
+.container-refs{
+    width: 80vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    margin-left: 9vw;
+}
+.txt-refs{
+    background-color: rgb(255, 255, 255, 80%);
+    text-align: center;
+    align-self: center;
+    height: 70px;
+    width: 500px;
+    font-size: 24px;
+    font-family: 'Inter', sans-serif;
+    margin: 20px;
+}
+h2{
+    margin-top: 10px;
+}
+.img-refs{
+    justify-content: space-between;
+    display: flex;
+}
+.c-refs{
+    width: 320px;
+    margin-top: 38px;
+}
+/*******************************************************************/
