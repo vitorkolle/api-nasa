@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
 }
+/**************************************************************************/
 body{
     background-image: url(./img/wallpaper-terra.jpg);
     background-size: cover;
@@ -46,4 +47,43 @@ header{
 }
 .refs{
     width: 60px;
+}
+/******************************************************************************/
+.container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.card{
+    width: 30vw;
+    height: 46vh;
+    background-color: rgb(30, 30, 30, 80%);
+    margin-top: 10vh;
+}
+.pic-dia{
+    margin-top: 28px;
+    margin-left: 54px;
+    width: 360px;
+    height: 270px;
+    cursor: pointer;
+}
+.pic-mar{
+    margin-top: 28px;
+    margin-left: 54px;
+    width: 360px;
+    height: 270px;
+    cursor: pointer;
+}
+.pic-lua{
+    margin-top: 28px;
+    margin-left: 54px;
+    width: 360px;
+    height: 270px;
+    cursor: pointer;
+}
+p{
+  color: rgb(255, 255, 255);
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  font-size: 26px;
+  margin-top: 5px;
 }
