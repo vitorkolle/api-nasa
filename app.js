@@ -1,26 +1,39 @@
 'use strict'
 
-const data_pic = document.getElementById('data-pic')
-
- const urlAPiPicDia = `https://api.nasa.gov/planetary/apod?api_key=aPYdTFBOJ3plq0jbUcveZsqBmASwOcl7RksDVUB8&title&date=${data_pic}`
-
- async function pegarImagem(){
-    const responseP = await fetch(urlAPiPicDia)
-    const dadosP = await responseP.json()
-    console.log(dadosP) 
+async function pegarImagemD(){
+    let urlAPiPicDia = `https://api.nasa.gov/planetary/apod?api_key=aPYdTFBOJ3plq0jbUcveZsqBmASwOcl7RksDVUB8&date=&concept_tags=True`
+    let responseP = await fetch(urlAPiPicDia)
+    let dadosP = await responseP.json()
+    let imgDia = dadosP.url
+    return imgDia
  }
 
- pegarImagem()
- 
- 
-function lua(){
-    window.location.href = "./pags/lua.html"
+function criarImg(imgDia){
+    let divD = document.getElementById('img-dia')
+    let imgD = document.createElement('img')
+    imgD.src = imgDia
+    imgD.classList.add('img-d')
+    divD.appendChild(imgD) 
 }
 
-function mar(){
-    window.location.href = "./pags/mar.html"
+async function mostrarImg(){
+   let imgDia = await pegarImagemD()
+    criarImg(imgDia)   
 }
+mostrarImg()
 
-function pic(){
-    window.location.href = "./pags/pic.html"
+function mostrarData(){
+let data = new Date();
+let dia = String(data.getDate()).padStart(2, '0')
+let mes = String(data.getMonth() + 1).padStart(2, '0')
+let ano = data.getFullYear()
+let dataAtual = `${dia}/ ${mes}/ ${ano}`
+
+let divData = document.getElementById('data')
+let txtData = document.createElement('p')
+divData.appendChild(txtData)
+txtData.textContent = `Dia da Foto: ${dataAtual}`
+txtData.classList.add('txt-data')
 }
+mostrarData()
+/*********************************************************************************************************************************** */

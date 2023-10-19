@@ -49,9 +49,24 @@ header{
     width: 60px;
 }
 /*****************************************************/
-.data{
-    background-color: rgb(256, 256, 256, 80%);
-    width: 231px;
+.data-img{
+    background-color: black;
+    display: flex;
+    width: 240px;
+    margin-top: 20px;
+    margin-left: 20px;
+    justify-content: space-around;
+}
+.img-dia{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 30px;    
+}
+.img-d{
+    width: 50vw;
+}
+.txt-data{
     font-family: 'Inter', sans-serif;
-    margin: 20px;
+    color: rgb(255, 255, 255);
 }
