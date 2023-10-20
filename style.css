@@ -5,7 +5,7 @@
 }
 /**************************************************************************/
 body{
-    background-image: url(../img/wallpaper-terra.jpg);
+    background-image: url(./img/wallpaper-terra.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -23,12 +23,12 @@ header{
     align-items: center;
 }
 .logo-img{
-    width: 274px;
-    height: 180px;
+    width: 27.4vh;
+    height: 18vh;
     margin-left: -30px;
 }
 .logo-txt{
-    font-size: 64px;
+    font-size: 6.4vh;
     margin-left: -42px;
     font-family: 'Jockey One', sans-serif;
 }
@@ -39,14 +39,14 @@ header{
     align-items: end;
     width: 40vh;
     display: flex;
-    margin-bottom: 18px;
-    margin-right: -18px;
+    margin-bottom: 1.8vh;
+    margin-right: -1.8vh;
 }
 .home{
-    width: 60px;
+    width: 6vh;
 }
 .refs{
-    width: 60px;
+    width: 6vh;
 }
 /******************************************************************************/
 .container{
