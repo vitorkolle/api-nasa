@@ -58,34 +58,34 @@ header{
     height: 46vh;
     background-color: rgb(30, 30, 30, 80%);
     margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .pic-dia{
-    margin-top: 28px;
-    margin-left: 54px;
-    width: 360px;
-    height: 270px;
+    width: 22vw;
+    height: 32vh;
     cursor: pointer;
+    margin-left: 3.5vw;
 }
 .pic-mar{
-    margin-top: 28px;
-    margin-left: 54px;
-    width: 360px;
-    height: 270px;
+    width: 22vw;
+    height: 32vh;
     cursor: pointer;
+    margin-left: 3.5vw;
 }
 .pic-lua{
-    margin-top: 28px;
-    margin-left: 54px;
-    width: 360px;
-    height: 270px;
+    width: 22vw;
+    height: 32vh;
     cursor: pointer;
+    margin-left: 3.5vw;
 }
 p{
   color: rgb(255, 255, 255);
   font-family: 'Inter', sans-serif;
   text-align: center;
-  font-size: 26px;
-  margin-top: 5px;
+  font-size: 3vh;
+  margin-top: 1vh;
   text-decoration: none;
 }
 .pags-link{
@@ -103,21 +103,24 @@ p{
     background-color: rgb(255, 255, 255, 80%);
     text-align: center;
     align-self: center;
-    height: 70px;
-    width: 500px;
-    font-size: 24px;
+    height: 7vh;
+    width: 25vw;
+    font-size: 2.4vh;
     font-family: 'Inter', sans-serif;
-    margin: 20px;
+    margin: 2vw;
 }
 h2{
-    margin-top: 10px;
+    margin-top: 1vh;
 }
 .img-refs{
     justify-content: space-between;
     display: flex;
+   
 }
 .c-refs{
-    width: 320px;
+    width: 20vw;
     margin-top: 38px;
+    border: 10px solid rgb(255, 255, 255, 80%);
+    border-radius: 20px;
 }
 /*******************************************************************/

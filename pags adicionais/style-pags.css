@@ -65,6 +65,8 @@ header{
 }
 .img-d{
     width: 50vw;
+    border: 10px solid rgb(156, 156, 156, 70%);
+    border-radius: 20px;
 }
 .txt-data{
     font-family: 'Inter', sans-serif;
