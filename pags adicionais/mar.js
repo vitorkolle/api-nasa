@@ -5,26 +5,33 @@ async function pegarImagemM(){
     const responseM = await fetch(urlAPiPicMarte)
     const dadosM = await responseM.json()
     const imgM = dadosM.latest_photos
-    const imagensMarte = []
+    const imagensMartei = []
     
     imgM.forEach(imagemMarte => {
-     imagensMarte.push(imagemMarte.img_src)         
+     imagensMartei.push(imagemMarte.img_src)         
     })
-    return imagensMarte
 
+    return imagensMartei
 }
-function criarImgM(imagensMarte){
+
+function criarImgM(imagensMartei){
+    const imagensMarte = []
+    console.log(imagensMarte)
+    imagensMarte.push(imagensMartei)
+
     const galeriaM = document.getElementById('galeriaM')
     
     imagensMarte.forEach(imagemMarte => {
-        const i = 0
+        let i = 0
         const imgMar = document.createElement('img')
         imgMar.src = imagemMarte[i]
-        galeriaM.appendChild(imgMar)      
+        imgMar.classList.add('imagem-marte')
+        galeriaM.appendChild(imgMar)    
+        i++  
     });    
 }
 async function mostrarImgM(){
     const imgMar = await pegarImagemM()
      criarImgM(imgMar)   
  }
-criarImgM()
+mostrarImgM()
