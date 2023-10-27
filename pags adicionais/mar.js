@@ -16,18 +16,15 @@ async function pegarImagemM(){
 
 function criarImgM(imagensMartei){
     const imagensMarte = []
-    console.log(imagensMarte)
     imagensMarte.push(imagensMartei)
 
     const galeriaM = document.getElementById('galeriaM')
     
     imagensMarte.forEach(imagemMarte => {
-        let i = 0
         const imgMar = document.createElement('img')
-        imgMar.src = imagemMarte[i]
+        imgMar.src = imagemMarte[0]
         imgMar.classList.add('imagem-marte')
-        galeriaM.appendChild(imgMar)    
-        i++  
+        galeriaM.appendChild(imgMar)     
     });    
 }
 async function mostrarImgM(){
@@ -35,3 +32,18 @@ async function mostrarImgM(){
      criarImgM(imgMar)   
  }
 mostrarImgM()
+
+function mostrarData(){
+    const data = new Date();
+    const dia = String(data.getDate()).padStart(2, '0')
+    const mes = String(data.getMonth() + 1).padStart(2, '0')
+    const ano = data.getFullYear()
+    const dataAtual = `${dia}/ ${mes}/ ${ano}`
+    
+    const divData = document.getElementById('data')
+    const txtData = document.createElement('p')
+    divData.appendChild(txtData)
+    txtData.textContent = `Dia da Foto: ${dataAtual}`
+    txtData.classList.add('txt-data')
+    }
+    mostrarData()
