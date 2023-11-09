@@ -4,7 +4,7 @@
 
 Como usar:
 O site possui três cards principais e dois ícones de navegação que estão no canto superior da tela, sendo esses dois: Refrências do ramo e Página Inicial, respectivamente;
-<br></br>
+<hr></hr>
 
 
 Primeiro Card:
