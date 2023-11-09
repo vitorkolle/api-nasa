@@ -5,10 +5,12 @@ O site possui três cards principais e dois ícones de navegação que estão no
 <hr></hr>
 Primeiro Card:
 O primeiro card tem como funcionalidade mostra a foto atronômica do dia, essa que é atualizada pela NASA diariamente. Aqui está um exemplo:
+
 ![image](https://github.com/vitorkolle/api-nasa/assets/123905283/e78840bb-75f3-4c69-bcca-85b2ddf28d73)
 <hr></hr>
 Segundo Card: 
 O segundo card tem como funcionalidade mostrar uma foto diária do "Planeta Vermelho", ou seja, de Marte. Essas fotos são capturadas pelo robô 'Curiosity', da NASA. Aqui está um Exemplo:
+
 ![image](https://github.com/vitorkolle/api-nasa/assets/123905283/822cbb10-bd46-4e87-9041-312f317826ee)
 <hr></hr>
 Terceiro Card:
